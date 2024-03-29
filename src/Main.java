@@ -18,6 +18,8 @@ public class Main  {
             Basket.SelectBasket();
             Payment.ProofPayment();
         }
+        ViewDocument.DisplayOpros();
+
 
     }
     static int idcontroleAccount=0;

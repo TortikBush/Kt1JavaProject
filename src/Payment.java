@@ -36,7 +36,7 @@ public Payment(int id,String numberCard,String Login,LocalDateTime datetime){
                      System.out.println("Введите адрес доставки ") ;
                      String address = scanner.nextLine();
                      FillingOutSheets.PaymentList.add(new Payment(idcontrol, FillingOutSheets.PersonList.get(i).CardNumber, login, LocalDateTime.now()));
-                     FillingOutSheets.InvoiceList.add(new Invoice(idcontrol,FillingOutSheets.InvoiceList.get(i).invoiceNumber,FillingOutSheets.InvoiceList.get(i).invoiceDateTime,FillingOutSheets.InvoiceList.get(i).clientName,FillingOutSheets.InvoiceList.get(i).address));
+                     FillingOutSheets.InvoiceList.add(new Invoice(idcontrol,idcontrol,LocalDateTime.now(),login,address));
                      System.out.println("Вы хотите заказать еще товар?");
                      String check = scanner.nextLine();
                      if(check.equals("да")){
